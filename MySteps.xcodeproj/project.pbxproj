@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BD790CA222AF73D00AC7F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790C9222AF73D00AC7F64 /* AppDelegate.swift */; };
+		2BD790CC222AF73D00AC7F64 /* MyStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790CB222AF73D00AC7F64 /* MyStepsViewController.swift */; };
+		2BD790D2222AF73D00AC7F64 /* MySteps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790D0222AF73D00AC7F64 /* MySteps.xcdatamodeld */; };
+		2BD790D4222AF73F00AC7F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD790D3222AF73F00AC7F64 /* Assets.xcassets */; };
+		2BD790D7222AF73F00AC7F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD790D5222AF73F00AC7F64 /* LaunchScreen.storyboard */; };
+		2BD790E5222B024200AC7F64 /* MyStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790E4222B024200AC7F64 /* MyStepsViewModel.swift */; };
+		2BD790E7222B034C00AC7F64 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790E6222B034C00AC7F64 /* User.swift */; };
+		2BD790EB222B044B00AC7F64 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790EA222B044B00AC7F64 /* RootViewController.swift */; };
+		2BD790F0222B04A700AC7F64 /* Root.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BD790EF222B04A700AC7F64 /* Root.storyboard */; };
+		2BD790F2222B060000AC7F64 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790F1222B060000AC7F64 /* RootViewModel.swift */; };
+		2BD790F5222B06CD00AC7F64 /* DataBaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790F4222B06CD00AC7F64 /* DataBaseHelper.swift */; };
+		2BD790F7222B06DC00AC7F64 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790F6222B06DC00AC7F64 /* HealthKitHelper.swift */; };
+		2BD790FE222B1A3E00AC7F64 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD790FD222B1A3E00AC7F64 /* Achievement.swift */; };
+		72E193711A8B231034A0FF75 /* Pods_MySteps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36B57B8CDD3208A491D4855E /* Pods_MySteps.framework */; };
+		A9CEA280222DDCD90068F679 /* AxisFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA27F222DDCD90068F679 /* AxisFormatters.swift */; };
+		A9CEA282222DDD0B0068F679 /* StepsChartViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA281222DDD0B0068F679 /* StepsChartViewDataSource.swift */; };
+		A9CEA284222DDFC90068F679 /* TestDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA283222DDFC90068F679 /* TestDataFactory.swift */; };
+		A9CEA286222DE3470068F679 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA285222DE3470068F679 /* Round.swift */; };
+		A9CEA28B222DF1DF0068F679 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9CEA289222DF1DF0068F679 /* Localizable.strings */; };
+		A9CEA291222F1F280068F679 /* AchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA290222F1F270068F679 /* AchievementView.swift */; };
+		A9CEA294222F1F930068F679 /* Achievement.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CEA293222F1F930068F679 /* Achievement.xib */; };
+		A9CEA296222F427F0068F679 /* NoAchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEA295222F427F0068F679 /* NoAchievementsView.swift */; };
+		A9CEA298222F429C0068F679 /* NoAchievements.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CEA297222F429C0068F679 /* NoAchievements.xib */; };
+		A9F4CE3F222B24CA00A51390 /* MySteps.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F4CE3E222B24CA00A51390 /* MySteps.xib */; };
+		A9F4CE41222B2A7400A51390 /* ManagedContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE40222B2A7400A51390 /* ManagedContextProvider.swift */; };
+		A9F4CE43222B346A00A51390 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE42222B346A00A51390 /* ErrorType.swift */; };
+		A9F4CE48222B4F4B00A51390 /* MyStepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE47222B4F4B00A51390 /* MyStepsView.swift */; };
+		A9F4CE4B222BE29200A51390 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F4CE4A222BE29200A51390 /* HealthKit.framework */; };
+		A9F4CE4D222BE3A400A51390 /* HealthStoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE4C222BE3A400A51390 /* HealthStoreProvider.swift */; };
+		A9F4CE4F222BE73900A51390 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9F4CE4E222BE73900A51390 /* InfoPlist.strings */; };
+		A9F4CE51222C074C00A51390 /* DailyStepsReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE50222C074C00A51390 /* DailyStepsReport.swift */; };
+		A9F4CE53222C565300A51390 /* StepsChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4CE52222C565300A51390 /* StepsChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BD790C6222AF73D00AC7F64 /* MySteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD790C9222AF73D00AC7F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BD790CB222AF73D00AC7F64 /* MyStepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepsViewController.swift; sourceTree = "<group>"; };
+		2BD790D1222AF73D00AC7F64 /* MySteps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MySteps.xcdatamodel; sourceTree = "<group>"; };
+		2BD790D3222AF73F00AC7F64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BD790D6222AF73F00AC7F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BD790D8222AF73F00AC7F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BD790E4222B024200AC7F64 /* MyStepsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepsViewModel.swift; sourceTree = "<group>"; };
+		2BD790E6222B034C00AC7F64 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2BD790EA222B044B00AC7F64 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2BD790EF222B04A700AC7F64 /* Root.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Root.storyboard; sourceTree = "<group>"; };
+		2BD790F1222B060000AC7F64 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		2BD790F4222B06CD00AC7F64 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
+		2BD790F6222B06DC00AC7F64 /* HealthKitHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		2BD790FD222B1A3E00AC7F64 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		36B57B8CDD3208A491D4855E /* Pods_MySteps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySteps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		460B1DB2AE5A62E79C907A07 /* Pods-MySteps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySteps.release.xcconfig"; path = "Target Support Files/Pods-MySteps/Pods-MySteps.release.xcconfig"; sourceTree = "<group>"; };
+		A9CEA27F222DDCD90068F679 /* AxisFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxisFormatters.swift; sourceTree = "<group>"; };
+		A9CEA281222DDD0B0068F679 /* StepsChartViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChartViewDataSource.swift; sourceTree = "<group>"; };
+		A9CEA283222DDFC90068F679 /* TestDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataFactory.swift; sourceTree = "<group>"; };
+		A9CEA285222DE3470068F679 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		A9CEA28A222DF1DF0068F679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9CEA28C222DF20F0068F679 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A9CEA290222F1F270068F679 /* AchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementView.swift; sourceTree = "<group>"; };
+		A9CEA293222F1F930068F679 /* Achievement.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Achievement.xib; sourceTree = "<group>"; };
+		A9CEA295222F427F0068F679 /* NoAchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoAchievementsView.swift; sourceTree = "<group>"; };
+		A9CEA297222F429C0068F679 /* NoAchievements.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoAchievements.xib; sourceTree = "<group>"; };
+		A9F4CE3E222B24CA00A51390 /* MySteps.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MySteps.xib; sourceTree = "<group>"; };
+		A9F4CE40222B2A7400A51390 /* ManagedContextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedContextProvider.swift; sourceTree = "<group>"; };
+		A9F4CE42222B346A00A51390 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		A9F4CE47222B4F4B00A51390 /* MyStepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStepsView.swift; sourceTree = "<group>"; };
+		A9F4CE49222BE29200A51390 /* MySteps.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySteps.entitlements; sourceTree = "<group>"; };
+		A9F4CE4A222BE29200A51390 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		A9F4CE4C222BE3A400A51390 /* HealthStoreProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStoreProvider.swift; sourceTree = "<group>"; };
+		A9F4CE4E222BE73900A51390 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		A9F4CE50222C074C00A51390 /* DailyStepsReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStepsReport.swift; sourceTree = "<group>"; };
+		A9F4CE52222C565300A51390 /* StepsChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsChartView.swift; sourceTree = "<group>"; };
+		E33B6CB7C92F1AB6C8B265EF /* Pods-MySteps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySteps.debug.xcconfig"; path = "Target Support Files/Pods-MySteps/Pods-MySteps.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BD790C3222AF73D00AC7F64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72E193711A8B231034A0FF75 /* Pods_MySteps.framework in Frameworks */,
+				A9F4CE4B222BE29200A51390 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BD790BD222AF73D00AC7F64 = {
+			isa = PBXGroup;
+			children = (
+				2BD790C8222AF73D00AC7F64 /* MySteps */,
+				2BD790C7222AF73D00AC7F64 /* Products */,
+				64221973473CF52AA8706906 /* Pods */,
+				D14178C31ABA2F3EDDC999F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2BD790C7222AF73D00AC7F64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BD790C6222AF73D00AC7F64 /* MySteps.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BD790C8222AF73D00AC7F64 /* MySteps */ = {
+			isa = PBXGroup;
+			children = (
+				A9F4CE49222BE29200A51390 /* MySteps.entitlements */,
+				2BD790F3222B06B500AC7F64 /* Helpers */,
+				2BD790EE222B047500AC7F64 /* Models */,
+				2BD790ED222B046100AC7F64 /* Root */,
+				2BD790EC222B045900AC7F64 /* MySteps */,
+				2BD790E3222AFF0300AC7F64 /* Supporting Files */,
+				2BD790C9222AF73D00AC7F64 /* AppDelegate.swift */,
+				2BD790D5222AF73F00AC7F64 /* LaunchScreen.storyboard */,
+				2BD790D3222AF73F00AC7F64 /* Assets.xcassets */,
+				A9F4CE42222B346A00A51390 /* ErrorType.swift */,
+			);
+			path = MySteps;
+			sourceTree = "<group>";
+		};
+		2BD790E3222AFF0300AC7F64 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEA289222DF1DF0068F679 /* Localizable.strings */,
+				2BD790D8222AF73F00AC7F64 /* Info.plist */,
+				2BD790D0222AF73D00AC7F64 /* MySteps.xcdatamodeld */,
+				A9F4CE4E222BE73900A51390 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2BD790EC222B045900AC7F64 /* MySteps */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEA292222F1F7A0068F679 /* Achievements */,
+				A9CEA27E222DDCC00068F679 /* Chart */,
+				2BD790E4222B024200AC7F64 /* MyStepsViewModel.swift */,
+				2BD790CB222AF73D00AC7F64 /* MyStepsViewController.swift */,
+				A9F4CE47222B4F4B00A51390 /* MyStepsView.swift */,
+				A9F4CE3E222B24CA00A51390 /* MySteps.xib */,
+			);
+			name = MySteps;
+			sourceTree = "<group>";
+		};
+		2BD790ED222B046100AC7F64 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				2BD790EF222B04A700AC7F64 /* Root.storyboard */,
+				2BD790EA222B044B00AC7F64 /* RootViewController.swift */,
+				2BD790F1222B060000AC7F64 /* RootViewModel.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		2BD790EE222B047500AC7F64 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2BD790E6222B034C00AC7F64 /* User.swift */,
+				2BD790FD222B1A3E00AC7F64 /* Achievement.swift */,
+				A9F4CE50222C074C00A51390 /* DailyStepsReport.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2BD790F3222B06B500AC7F64 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD790F4222B06CD00AC7F64 /* DataBaseHelper.swift */,
+				A9F4CE40222B2A7400A51390 /* ManagedContextProvider.swift */,
+				2BD790F6222B06DC00AC7F64 /* HealthKitHelper.swift */,
+				A9F4CE4C222BE3A400A51390 /* HealthStoreProvider.swift */,
+				A9CEA283222DDFC90068F679 /* TestDataFactory.swift */,
+				A9CEA285222DE3470068F679 /* Round.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		64221973473CF52AA8706906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E33B6CB7C92F1AB6C8B265EF /* Pods-MySteps.debug.xcconfig */,
+				460B1DB2AE5A62E79C907A07 /* Pods-MySteps.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A9CEA27E222DDCC00068F679 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				A9F4CE52222C565300A51390 /* StepsChartView.swift */,
+				A9CEA27F222DDCD90068F679 /* AxisFormatters.swift */,
+				A9CEA281222DDD0B0068F679 /* StepsChartViewDataSource.swift */,
+			);
+			name = Chart;
+			sourceTree = "<group>";
+		};
+		A9CEA292222F1F7A0068F679 /* Achievements */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEA290222F1F270068F679 /* AchievementView.swift */,
+				A9CEA293222F1F930068F679 /* Achievement.xib */,
+				A9CEA295222F427F0068F679 /* NoAchievementsView.swift */,
+				A9CEA297222F429C0068F679 /* NoAchievements.xib */,
+			);
+			name = Achievements;
+			sourceTree = "<group>";
+		};
+		D14178C31ABA2F3EDDC999F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9F4CE4A222BE29200A51390 /* HealthKit.framework */,
+				36B57B8CDD3208A491D4855E /* Pods_MySteps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BD790C5222AF73D00AC7F64 /* MySteps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BD790DB222AF73F00AC7F64 /* Build configuration list for PBXNativeTarget "MySteps" */;
+			buildPhases = (
+				7C90E44B5534B28F03D9F119 /* [CP] Check Pods Manifest.lock */,
+				2BD790C2222AF73D00AC7F64 /* Sources */,
+				2BD790C3222AF73D00AC7F64 /* Frameworks */,
+				2BD790C4222AF73D00AC7F64 /* Resources */,
+				2DD8118DB6274446EA7A9E6F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySteps;
+			productName = MySteps;
+			productReference = 2BD790C6222AF73D00AC7F64 /* MySteps.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BD790BE222AF73D00AC7F64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Boguslaw Parol";
+				TargetAttributes = {
+					2BD790C5222AF73D00AC7F64 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 2BD790C1222AF73D00AC7F64 /* Build configuration list for PBXProject "MySteps" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				el,
+			);
+			mainGroup = 2BD790BD222AF73D00AC7F64;
+			productRefGroup = 2BD790C7222AF73D00AC7F64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BD790C5222AF73D00AC7F64 /* MySteps */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BD790C4222AF73D00AC7F64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BD790D7222AF73F00AC7F64 /* LaunchScreen.storyboard in Resources */,
+				A9CEA294222F1F930068F679 /* Achievement.xib in Resources */,
+				A9CEA28B222DF1DF0068F679 /* Localizable.strings in Resources */,
+				A9F4CE3F222B24CA00A51390 /* MySteps.xib in Resources */,
+				A9CEA298222F429C0068F679 /* NoAchievements.xib in Resources */,
+				2BD790D4222AF73F00AC7F64 /* Assets.xcassets in Resources */,
+				2BD790F0222B04A700AC7F64 /* Root.storyboard in Resources */,
+				A9F4CE4F222BE73900A51390 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DD8118DB6274446EA7A9E6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MySteps/Pods-MySteps-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CorePlot/CorePlot.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CorePlot.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MySteps/Pods-MySteps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C90E44B5534B28F03D9F119 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MySteps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BD790C2222AF73D00AC7F64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9CEA280222DDCD90068F679 /* AxisFormatters.swift in Sources */,
+				2BD790CC222AF73D00AC7F64 /* MyStepsViewController.swift in Sources */,
+				A9F4CE51222C074C00A51390 /* DailyStepsReport.swift in Sources */,
+				A9F4CE4D222BE3A400A51390 /* HealthStoreProvider.swift in Sources */,
+				A9CEA291222F1F280068F679 /* AchievementView.swift in Sources */,
+				2BD790F7222B06DC00AC7F64 /* HealthKitHelper.swift in Sources */,
+				2BD790F2222B060000AC7F64 /* RootViewModel.swift in Sources */,
+				2BD790FE222B1A3E00AC7F64 /* Achievement.swift in Sources */,
+				A9CEA296222F427F0068F679 /* NoAchievementsView.swift in Sources */,
+				A9CEA284222DDFC90068F679 /* TestDataFactory.swift in Sources */,
+				2BD790D2222AF73D00AC7F64 /* MySteps.xcdatamodeld in Sources */,
+				2BD790EB222B044B00AC7F64 /* RootViewController.swift in Sources */,
+				2BD790F5222B06CD00AC7F64 /* DataBaseHelper.swift in Sources */,
+				A9F4CE41222B2A7400A51390 /* ManagedContextProvider.swift in Sources */,
+				2BD790E5222B024200AC7F64 /* MyStepsViewModel.swift in Sources */,
+				A9CEA282222DDD0B0068F679 /* StepsChartViewDataSource.swift in Sources */,
+				A9F4CE53222C565300A51390 /* StepsChartView.swift in Sources */,
+				A9F4CE48222B4F4B00A51390 /* MyStepsView.swift in Sources */,
+				2BD790E7222B034C00AC7F64 /* User.swift in Sources */,
+				A9F4CE43222B346A00A51390 /* ErrorType.swift in Sources */,
+				A9CEA286222DE3470068F679 /* Round.swift in Sources */,
+				2BD790CA222AF73D00AC7F64 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BD790D5222AF73F00AC7F64 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BD790D6222AF73F00AC7F64 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9CEA289222DF1DF0068F679 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9CEA28A222DF1DF0068F679 /* Base */,
+				A9CEA28C222DF20F0068F679 /* el */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BD790D9222AF73F00AC7F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BD790DA222AF73F00AC7F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BD790DC222AF73F00AC7F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33B6CB7C92F1AB6C8B265EF /* Pods-MySteps.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySteps/MySteps.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PTJD5524CH;
+				INFOPLIST_FILE = MySteps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parbo.MySteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BD790DD222AF73F00AC7F64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460B1DB2AE5A62E79C907A07 /* Pods-MySteps.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySteps/MySteps.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PTJD5524CH;
+				INFOPLIST_FILE = MySteps/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parbo.MySteps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BD790C1222AF73D00AC7F64 /* Build configuration list for PBXProject "MySteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD790D9222AF73F00AC7F64 /* Debug */,
+				2BD790DA222AF73F00AC7F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BD790DB222AF73F00AC7F64 /* Build configuration list for PBXNativeTarget "MySteps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BD790DC222AF73F00AC7F64 /* Debug */,
+				2BD790DD222AF73F00AC7F64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2BD790D0222AF73D00AC7F64 /* MySteps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2BD790D1222AF73D00AC7F64 /* MySteps.xcdatamodel */,
+			);
+			currentVersion = 2BD790D1222AF73D00AC7F64 /* MySteps.xcdatamodel */;
+			path = MySteps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2BD790BE222AF73D00AC7F64 /* Project object */;
+}

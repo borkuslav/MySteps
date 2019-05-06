@@ -1,0 +1,11 @@
+/* 
+  InfoPlist.strings
+  MySteps
+
+  Created by Bogusław Parol on 03/03/2019.
+  Copyright © 2019 Boguslaw Parol. All rights reserved.
+*/
+
+NSHealthShareUsageDescription = "To read your steps data";
+
+//NSHealthUpdateUsageDescription = "To update health metrics data";

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MySteps
+
+  Created by Bogusław Parol on 05/03/2019.
+  Copyright © 2019 Boguslaw Parol. All rights reserved.
+*/
+
+/* Chart title */
+"Steps" = "βήματα";
+
+/* Achievements title */
+"Achievements" = "Achievements";
