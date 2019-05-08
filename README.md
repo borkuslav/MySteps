@@ -1,2 +1,2 @@
 # MySteps
-Example project how to use CorePlot and HomeKit
+This is a demo project that uses HealthKit capabilities and draws daily steps made by users using CorePlot library
